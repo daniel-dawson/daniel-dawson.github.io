@@ -1,11 +1,11 @@
 # Site settings
 author: Daniel Dawson
-title: 
+title: From Coffee to Code
 header-img: img/home-bg.png
 email: dannyldawson@gmail.com
 copyright_name: Daniel Dawson
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A Journey
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  daniel-dawson
