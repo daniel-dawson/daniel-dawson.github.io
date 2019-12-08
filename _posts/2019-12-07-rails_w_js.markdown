@@ -1,0 +1,25 @@
+---
+layout: post
+title:      "Rails w/js"
+date:       2019-12-08 04:56:19 +0000
+permalink:  rails_w_js
+---
+
+
+For this project, I simply added functionality onto my rails app, Motimates. At its core, this is a simple task. Take existing features and make them behave more like an single page application (SPA). Easy right? Well, it's not quite that simple.
+
+Normally to make a Rails project behave like an SPA, you would simply remove any front end logic to make your Rails code strictly related to backend functionality, and replace the frontend with a combination of html, css and javascript. The latter would often be a framework, such as React or Vue.
+
+Instead of that, I took my Rails project and tried to convert parts of it to update with javascript, avoiding unnecessary renderings, and therefore making my app a little snappier. However, This also make me come up against problems with how I was trying to code my app, and how rails intended for me to do so.
+
+One example of this is Turbolinks. I've been hearing about turbolinks on and off throughout the rails sections. Some students' problems were caused by it, but instructors always just told students to turn turbolinks off.
+
+I believe that is a mistake.
+
+Instead of shirking off the problem, and thereby circumventing all the benefits that turbolinks provided, I decided to read the documentation. It was very helpful in building up my doc-reading skills, and allowed me to make small hacks around turbolinks when necessary. For instance, I was having some trouble with content flicker when reloading some pages. This was due to how turbolinks uses the history api to save the states of pages visited with anchor links in your rails views. I'll leave out the nitty gritty details, but in the end Turbolinks' clearCache() method allowed me to clear out the history, avoiding any content flicker.
+
+I was honestly pretty sad to hear about how amazing turbolinks was, and how little I knew about it. If utilized correctly, it can make your rails app behave pretty close to an SPA. 
+
+Other improvements I tried to get around to were password recovery, which involved a mailer; styling with semantic ui; and a responsive filtering system.
+
+Features I am have in the works, but not in time for the review, are realtime chat between users, adding admin capabilities, and the ability to submit ideas for additional communities/sub-communities.
