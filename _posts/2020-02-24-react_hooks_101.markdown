@@ -1,0 +1,27 @@
+---
+layout: post
+title:      "React Hooks 101"
+date:       2020-02-25 04:20:24 +0000
+permalink:  react_hooks_101
+---
+
+
+## The What
+
+So what are hooks? As of React 16, hooks are new functions that introduce the ability to use state and lifecycle features of class components in your functional components. There are built-in hooks the api provides out of the box, but you can also write custom hooks to extract logic that repeats across components.
+It is important to note that hooks do not replace anything. Hooks are an opt-in feature that work alongside your current class-based components.
+
+## The Why
+Okay, so class components aren’t going away anytime soon. Why use hooks at all then? Well, they are meant to address some current issues that arise with a class-based approach.
+### Logic Reuse
+The most-used patterns for sharing stateful logic between components are render props and higher order components. While effective, these patterns lead to the notorious “wrapper hell.” Class components also tend to spread related logic over several lifecycle methods, making it impossible to extract and reuse.
+Both of these problems are addressed by hooks, which allow you to easily extract and consolidate related logic into functions that you can share among your other files. Hooks themselves can even be refactored into custom hooks.
+### Ease of Use
+Concepts — such as the “this” keyword, binding functions and knowing when to use class vs functional components — are hard to grasp. Since classes are still relatively new to javascript, the lack of some syntactic features can lead to long-winded code that further complicates using classes.
+
+### The Catch
+Hooks are an amazing tool to utilize in your React projects, and solve a lot of problems. However, they are still new and undergoing growing pains. Some drawbacks include:
+Replacing difficult class concepts (for instance, the “this” keyword) with difficult functional concepts (like closures)
+Testing, which currently uses many tools with class-based api’s
+Unintuitive rules (for instance, no using hooks inside of “if” statements). This can lead to difficult bugs, like in the case of an early return statement which comes before some of your hook calls.
+Take care to evaluate whether or not it’s a good idea to adopt hooks into your project, particularly if they’re from an external library like redux (calling you out, useSelector).
