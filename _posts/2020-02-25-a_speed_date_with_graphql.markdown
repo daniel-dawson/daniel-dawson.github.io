@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "A speed date with Graphql"
-date:       2020-02-26 01:00:14 +0000
+date:       2020-02-25 20:00:16 -0500
 permalink:  a_speed_date_with_graphql
 ---
 
